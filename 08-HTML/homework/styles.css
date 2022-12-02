@@ -1,3 +1,8 @@
+*{box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+
+}
 body{
     background-image: url(https://w0.peakpx.com/wallpaper/941/49/HD-wallpaper-old-wood-texture-wood-background-wood-texture-brown-background-tree.jpg);
 }
@@ -15,8 +20,15 @@ img{
     border-style: groove;
     border-color: grey;
     border-radius: 3px;
+    margin: 0 auto; 
 }
 #spanId{
     font-size: 18px;
     margin: 50px;
+}
+.divClass{
+background-color: rgb(54, 40, 4);
+margin: 0 auto;
+height: 100px; 
+width: 500px;
 }

@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Lora', serif;
+}
+body{
+    background-color: #99b898;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%232a363b' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+}
+header, h1{
+    border-collapse:separate;
+    background-color: #2a363b;
+    position:relative;
+    align-items:unset;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 2rem 1rem;
+    backdrop-filter: blur(6rem);
+    opacity: .95;
+}
+p {
+    font-size: 1.2rem;
+}
+#container{
+    margin: 0 auto;
+    width: 400px;    
+}
+.tarjetas{
+    transition: box-shadow 0.2s ease-in-out;
+    background-color: #fecea8;
+    margin: 1rem auto;
+    border-radius: 0.3rem;
+    padding: 0.25rem 0rem;
+    cursor: pointer;
+}
+
+.tarjetas h2,.tarjetas p{
+    margin: 1rem;
+}
+.tarjetas:hover{
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 2);
+}
