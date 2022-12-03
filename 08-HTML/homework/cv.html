@@ -4,33 +4,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curriculum vitae Rafael Martinez</title>
+    <title>CV Rafael Martinez</title>
     <link rel="stylesheet" href="cvs.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&display=swap" rel="stylesheet">
-</head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
 <body>
-    <header id="Inicio">
-        
-        <h1>Rafael Eduardo Martinez Frontado</h1>
-        <img src="Rafael.jpg" alt="FotoRafael" width="140px" height="190" >
-        <p>Email: rzyfront@gmail.com</p>
-        <p>Tel: +57 3234668500</p>
+  <div class="Cabeza">
+    <!-- Encabezado y Menu -->
+    <header>
+        <h1 class="g-text">Rafael Dev</h1>
+        <nav>
+          <a href="#Inicio"  onclick="seleccionar()">Inicio</a>
+          <a href="#Sobremi"  onclick="seleccionar()">Sobre Mí</a>
+          <a href="#Educacion"  onclick="seleccionar()">Educacion</a>
+          <a href="#Experiencias laborales"  onclick="seleccionar()">Experiencias laborales</a>
+          <a href="#Skills"  onclick="seleccionar()">Skills</a>
+          <a href="#Hobbies"  onclick="seleccionar()">Hobbies</a>
+        </nav>
+        <div id="icon-nav" class="nav-responsive" onclick="mostrarOcultarMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
     </header>
-    <div id="container">
-      <div class="tarjetas">
-        <h2>Descripcion personal:</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam illum iste quisquam optio distinctio. Pariatur illo, id soluta autem rem esse veniam velit? Explicabo, ab laborum illum accusantium asperiores suscipit!</p>
-      </div>
-      <div class="tarjetas">
-        <h2>Educacion:</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium natus atque molestiae obcaecati facere nihil nesciunt omnis, amet sequi? Aspernatur deserunt aliquid placeat sit quae ullam distinctio vel temporibus obcaecati.</p>
-      </div>
-      <div class="tarjetas">
-        <h2>Experiencias Laborales:</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia hic id voluptates provident. Voluptatum facilis sunt perspiciatis nam, modi ea asperiores tempore quam, iusto autem quis nobis necessitatibus a excepturi.</p>
-      </div>
+    <!-- Seccion de Inicio -->
 
-    </div>
+    <section id="Inicio">
+      <div class="fila">
+          <div class="col">
+            <p>Rafael Martinez</p>
+            <h1 class="g-text">Futuro Full Stack Developer</h1>
+            <button>Contactame</button>
+          </div>
+          <div class="col">
+            <div class="imagencont">
+                <img src="Rafael2.jpg" alt="FotoRafael" width="200px">
+          </div>
+          </div>
+      </div>
+    </section>
+    <!-- Seccion de Sobre Mí -->
+    
+    <section id="Sobremi">
+      <div class="fila">
+        <div class="col info">
+          <h3>Sobre Mí</h3>
+          <h2 class="g-text">Estudiante de Ingenieria de Sistemas y Full Stack Develeloper</h2>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero ratione accusantium placeat sint mollitia in nulla illum cum, ea sed beatae quod eaque, magni veritatis quo officia? Adipisci, id aperiam!</p>
+        </div>
+        <div class="col">
+          <div class="cont-img">
+            <img src="Rafael.jpg" alt="Rafael" width="400px">
+          </div>
+        </div>
+      </div>
+      
+    </section>
+  </div>
+    
     <footer>
       <div>
         <a href="#Inicio">Inicio</a>
