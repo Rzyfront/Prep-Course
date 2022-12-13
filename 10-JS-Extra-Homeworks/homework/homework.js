@@ -47,6 +47,10 @@ function capToFront(s) {
   var min=[];
   var may=[];
   for (let i = 0; i < s.length; i++) {
+    //toUpperCase es un metodo de String para convertir a mayusculas
+    //toLowerCase es para minusculas, se puede usar para encontrar minusculas o
+    //mayusculas en una cadena si lo convinamos con un condicional con el que
+    //tenemos abajo de referencia.
     if (s[i]===s[i].toUpperCase()) {
       may.push(s[i]);
     }
@@ -81,6 +85,7 @@ function capicua(numero){
   //izquierda a derecha que de derecha a izquierda. Caso contrario retorna "No es capicua"
   //Escribe tu código aquí
   var num1=numero.toString();
+  //Split y Join solo es un metodo de los String, no funciona con numeros
   if (num1=== num1.split("").reverse().join("")) {
     return "Es capicua"
   }
@@ -92,6 +97,7 @@ function deleteAbc(cadena){
   //Define una función que elimine las letras "a", "b" y "c" de la cadena dada 
   //y devuelva la versión modificada o la misma cadena, en caso de contener dichas letras.
   //Escribe tu código aquí
+  //Split y Join solo es un metodo de los String, no funciona con numeros
   var newcadena=cadena.split("");
   var cadenamod=newcadena.filter(function(x){
     if (x!=="a" && x!=="b" && x!=="c") {
@@ -132,6 +138,7 @@ function buscoInterseccion(arreglo1, arreglo2){
   //Escribe tu código aquí 
   var union=[]; 
   for (let i = 0; i < arreglo1.length; i++) {
+    //Includes es un metodo de array para encontrar un valor dentro de un array
     if (arreglo2.includes(arreglo1[i]) ) {
       union.push(arreglo1[i])
     }
